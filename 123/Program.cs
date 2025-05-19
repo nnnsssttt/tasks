@@ -1,57 +1,79 @@
-﻿using System;
+using System;
 
-public class Calculator
+class Program
 {
-    public static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Простой калькулятор");
+        double num1, num2;
+        string operation;
 
-        while (true)
+        Console.Write("Введите первое число: ");
+        num1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Введите второе число: ");
+        num2 = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("\nВыберите операцию:");
+        Console.WriteLine("+  -> Сложение");
+        Console.WriteLine("-  -> Вычитание");
+        Console.WriteLine("*  -> Умножение");
+        Console.WriteLine("/  -> Деление");
+        Console.WriteLine("%  -> Остаток от деления");
+        Console.WriteLine("++ -> Инкремент первого числа");
+        Console.WriteLine("-- -> Декремент первого числа");
+        Console.Write("Введите операцию: ");
+        operation = Console.ReadLine();
+
+        if (operation == "+")
         {
-            Console.WriteLine("Введите первое число:");
-            double num1 = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("Введите оператор (+, -, *, /):");
-            char op = Console.ReadKey().KeyChar;
-            Console.WriteLine(); // Перенос строки после ввода оператора
-
-            Console.WriteLine("Введите второе число:");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-
-            double result = 0;
-
-            switch (op)
+            Console.WriteLine($"Результат: {num1} + {num2} = {num1 + num2}");
+        }
+        else if (operation == "-")
+        {
+            Console.WriteLine($"Результат: {num1} - {num2} = {num1 - num2}");
+        }
+        else if (operation == "*")
+        {
+            Console.WriteLine($"Результат: {num1} * {num2} = {num1 * num2}");
+        }
+        else if (operation == "/")
+        {
+            if (num2 == 0)
             {
-                case '+':
-                    result = num1 + num2;
-                    break;
-                case '-':
-                    result = num1 - num2;
-                    break;
-                case '*':
-                    result = num1 * num2;
-                    break;
-                case '/':
-                    if (num2 == 0)
-                    {
-                        Console.WriteLine("Ошибка: деление на ноль!");
-                        continue; // Переход к следующей итерации цикла
-                    }
-                    result = num1 / num2;
-                    break;
-                default:
-                    Console.WriteLine("Ошибка: неверный оператор!");
-                    continue; // Переход к следующей итерации цикла
+                Console.WriteLine("Ошибка: Деление на ноль невозможно.");
             }
-
-            Console.WriteLine($"Результат: {result}");
-
-            Console.WriteLine("Продолжить? (да/нет)");
-            string answer = Console.ReadLine();
-            if (answer.ToLower() != "да")
+            else
             {
-                break; // Выход из цикла
+                Console.WriteLine($"Результат: {num1} / {num2} = {num1 / num2}");
             }
         }
+        else if (operation == "%")
+        {
+            if (num2 == 0)
+            {
+                Console.WriteLine("Ошибка: Деление на ноль невозможно.");
+            }
+            else
+            {
+                Console.WriteLine($"Результат: {num1} % {num2} = {num1 % num2}");
+            }
+        }
+        else if (operation == "++")
+        {
+            num1++;
+            Console.WriteLine($"Результат инкремента: {num1}");
+        }
+        else if (operation == "--")
+        {
+            num1--;
+            Console.WriteLine($"Результат декремента: {num1}");
+        }
+        else
+        {
+            Console.WriteLine("Ошибка: Неверная операция.");
+        }
+
+        Console.WriteLine("\nНажмите любую клавишу для выхода...");
+        Console.ReadKey();
     }
 }
