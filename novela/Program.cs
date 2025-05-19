@@ -1,84 +1,107 @@
-﻿using System;
+using System;
 
-public class TextAdventure
+namespace SimpleNovel
 {
-    public static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Затерянный в лесу");
-
-        
-        Console.WriteLine("Ты просыпаешься в лесу. Что будешь делать?");
-        Console.WriteLine("a) Пойдешь на север (компас)");
-        Console.WriteLine("b) Пойдешь на запад (закат)");
-        Console.WriteLine("c) Заберешься на дерево");
-
-        char choice1 = Console.ReadKey().KeyChar;
-        Console.WriteLine();
-
-        switch (choice1)
+        static void Main()
         {
-            case 'a':
-                
-                Console.WriteLine("Ты нашел тропинку. Что дальше?");
-                Console.WriteLine("a) Идти по тропинке");
-                Console.WriteLine("b) Свернуть в лес");
+            Console.WriteLine("Добро пожаловать в пошаговую новеллу!");
+            Console.WriteLine("Вы находитесь в лесу. Перед вами развилка.");
 
-                char choice2a = Console.ReadKey().KeyChar;
-                Console.WriteLine();
+            Console.WriteLine("Шаг 1: Куда вы пойдете?");
+            Console.WriteLine("1. Налево");
+            Console.WriteLine("2. Направо");
+            int choice1 = Convert.ToInt32(Console.ReadLine());
 
-                if (choice2a == 'a')
-                {
-                    
-                    Console.WriteLine("Ты нашел хижину. Постучишь? (да/нет)");
-                    string choice3aa = Console.ReadLine().ToLower();
-                    if (choice3aa == "да")
-                    {
-                        Console.WriteLine("Тебя встретил дружелюбный отшельник и показал дорогу."); 
-                    }
-                    else
-                    {
-                        Console.WriteLine("Ты ушел от хижины и заблудился."); 
-                    }
-                }
-                else if (choice2a == 'b')
-                {
-                    
-                    Console.WriteLine("Ты нашел светящийся цветок. Прикоснёшься? (да/нет)");
-                    string choice3ab = Console.ReadLine().ToLower();
-                    if (choice3ab == "да")
-                    {
-                        Console.WriteLine("Цветок оказался магическим и перенес тебя домой!"); 
-                    }
-                    else
-                    {
-                        Console.WriteLine("Ты прошел мимо цветка и заблудился."); 
-                    }
-                }
-                break;
+            if (choice1 == 1)
+            {
+                Console.WriteLine("Вы свернули налево и наткнулись на старую хижину.");
+            }
+            else if (choice1 == 2)
+            {
+                Console.WriteLine("Вы свернули направо и увидели озеро.");
+            }
+            else
+            {
+                Console.WriteLine("Вы не выбрали ни один из путей и остались на месте.");
+            }
 
+            Console.WriteLine("Шаг 2: Что вы будете делать?");
+            Console.WriteLine("1. Исследовать хижину");
+            Console.WriteLine("2. Купаться в озере");
+            int choice2 = Convert.ToInt32(Console.ReadLine());
 
-            case 'b':
-               
-                Console.WriteLine("Ты в болоте. Что делать?");
-                Console.WriteLine("a) Выбраться самому");
-                Console.WriteLine("b) Позвать на помощь");
-                
-                break;
+            if (choice2 == 1)
+            {
+                Console.WriteLine("Вы исследовали хижину и нашли старую карту.");
+            }
+            else if (choice2 == 2)
+            {
+                Console.WriteLine("Вы искупались в озере и почувствовали себя отдохнувшим.");
+            }
+            else
+            {
+                Console.WriteLine("Вы решили ничего не делать и просто сидеть.");
+            }
 
-            case 'c':
-               
-                Console.WriteLine("Ты на дереве. Видишь дым. Что делать?");
-                Console.WriteLine("a) Идти к дыму");
-                Console.WriteLine("b) Остаться на дереве");
-               
-                break;
+            Console.WriteLine("Шаг 3: Что вы будете делать дальше?");
+            Console.WriteLine("1. Изучить карту");
+            Console.WriteLine("2. Продолжить путь");
+            int choice3 = Convert.ToInt32(Console.ReadLine());
 
-            default:
-                Console.WriteLine("Неверный выбор.");
-                break;
+            if (choice3 == 1)
+            {
+                Console.WriteLine("Вы изучили карту и обнаружили, что она ведет к сокровищам.");
+            }
+            else if (choice3 == 2)
+            {
+                Console.WriteLine("Вы решили продолжить путь и ушли дальше в лес.");
+            }
+            else
+            {
+                Console.WriteLine("Вы решили остаться на месте и подумать.");
+            }
+
+            Console.WriteLine("Шаг 4: Что вы выберете?");
+            Console.WriteLine("1. Следовать за картой");
+            Console.WriteLine("2. Остаться в лесу");
+            int choice4 = Convert.ToInt32(Console.ReadLine());
+
+            if (choice4 == 1)
+            {
+                Console.WriteLine("Вы последовали за картой и нашли сокровища!");
+            }
+            else if (choice4 == 2)
+            {
+                Console.WriteLine("Вы остались в лесу и решили построить там дом.");
+            }
+            else
+            {
+                Console.WriteLine("Вы решили вернуться домой.");
+            }
+
+            Console.WriteLine("Шаг 5: Как вы закончите свое приключение?");
+            Console.WriteLine("1. Вернуться домой с сокровищами");
+            Console.WriteLine("2. Остаться в лесу и начать новую жизнь");
+            int choice5 = Convert.ToInt32(Console.ReadLine());
+
+            if (choice5 == 1)
+            {
+                Console.WriteLine("Вы вернулись домой с сокровищами и стали очень богатым.");
+            }
+            else if (choice5 == 2)
+            {
+                Console.WriteLine("Вы остались в лесу и начали новую жизнь, полную приключений.");
+            }
+            else
+            {
+                Console.WriteLine("Вы решили закончить свое приключение и вернуться домой.");
+            }
+
+            Console.WriteLine("Спасибо за игру!");
+            Console.WriteLine("Нажмите любую клавишу для выхода...");
+            Console.ReadKey();
         }
-
-
-        Console.ReadKey(); 
     }
 }
