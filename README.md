@@ -38,3 +38,6 @@
 
 #### Задание 5 CodeRun: 29 задача аналитики
 папка: (https://github.com/nnnsssttt/zadania/blob/main/Code/CodePen/5.cs)
+
+Задание блок схемы 
+папка: (https://github.com/nnnsssttt/tasks/blob/main/блок%20схемы.docx)
