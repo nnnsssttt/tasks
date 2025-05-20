@@ -39,19 +39,19 @@
 #### Задание 5 CodeRun: 29 задача аналитики
 папка: (https://github.com/nnnsssttt/zadania/blob/main/Code/CodePen/5.cs)
 
-Задание блок схемы 
+#### Задание блок схемы 
 папка: (https://github.com/nnnsssttt/tasks/blob/main/блок%20схемы.docx)
 
-Задание на создание проводника
+#### Задание на создание проводника
 папка: (https://github.com/nnnsssttt/tasks/blob/main/conductor.cs)
 
-Задание создание крестики нолики
+#### Задание создание крестики нолики
 папка: (https://github.com/nnnsssttt/tasks/blob/main/tictactoe.cs)
 
-4 Задания на циклы
+#### 4 Задания на циклы
 папка: (https://github.com/nnnsssttt/tasks/tree/main/cikl%20(1))
 
-Задания на массивы
+#### Задания на массивы
 папка: (https://github.com/nnnsssttt/tasks/tree/main/Задачи%20массивы)
 
 #### Задания на методы
