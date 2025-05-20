@@ -41,3 +41,10 @@
 
 Задание блок схемы 
 папка: (https://github.com/nnnsssttt/tasks/blob/main/блок%20схемы.docx)
+
+Задание на создание проводника
+папка: (https://github.com/nnnsssttt/tasks/blob/main/conductor.cs)
+
+Задание создание крестики нолики
+папка: (https://github.com/nnnsssttt/tasks/blob/main/tictactoe.cs)
+
