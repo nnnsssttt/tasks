@@ -46,6 +46,13 @@
 папка: (https://github.com/nnnsssttt/tasks/blob/main/conductor.cs)
 
 Задание создание крестики нолики
-
 папка: (https://github.com/nnnsssttt/tasks/blob/main/tictactoe.cs)
 
+4 Задания на циклы
+папка: (https://github.com/nnnsssttt/tasks/tree/main/cikl%20(1))
+
+Задания на массивы
+папка: (https://github.com/nnnsssttt/tasks/tree/main/Задачи%20массивы)
+
+Задания на методы
+папка: (https://github.com/nnnsssttt/tasks/tree/main/задачи%20методы)
