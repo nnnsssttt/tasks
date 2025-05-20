@@ -1,0 +1,5 @@
+public bool IsPalindrome(string text)
+{
+    string reversed = new string(text.Reverse().ToArray());
+    return text.Equals(reversed, StringComparison.OrdinalIgnoreCase);
+}
